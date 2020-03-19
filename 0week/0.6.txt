@@ -1,0 +1,20 @@
+
+    
+note over Browser
+    user writes something into the text field
+    and clicks the submit button
+end note 
+
+note over Browser
+    event handler gets triggered,
+    adds data to the list 
+    and rerenders the page
+end note 
+
+Browser->Server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+note over Server: JSON-data created
+
+Server->Browser: status code 201 (created) returned
+
+
